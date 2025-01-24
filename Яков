@@ -1,0 +1,16 @@
+import pandas as pdindex = 0
+number_column = 1
+# Чтение Excel-файла
+df_excel = pd.read_excel('Data1.xlsx')
+number_line = int(input())
+while index <= 4
+    index += 1
+    numbers = [df_excel.iloc[number_column,number_line - 1]]
+    average = sum(numbers) / len(numbers)    number_column += 1
+    print(average)
+    index =index + 1
+print(average)
+# Посмотреть первые 5 строк
+print(df_excel.head())
+# Посмотреть информацию о таблице
+print(df_excel.info())
